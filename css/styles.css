@@ -207,7 +207,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.42;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -229,14 +229,16 @@ ul {
   margin-bottom: 56px;
 }
 
-.duties .subtitle {
-  background-color: #757575; /*временный цвет*/
+.duties-card .subtitle {
+  width: inherit;
+  background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
-  display: block;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* flex-wrap: nowrap; */
+  padding-top: 27px;
+  /* padding-left: 40px; */
+  padding-bottom: 27px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .duties .title,
@@ -252,7 +254,26 @@ ul {
 }
 
 .duties-card {
-  text-align: center;
+  display: flex;
+  height: 294px;
+  width: 370px;
+
+  /* align-content: center; */
+  /* justify-content: center; */
+  align-items: flex-end;
+  /* text-align: center; */
+}
+
+.duties-card.desktop {
+  background-image: url(../img/laptop.jpg);
+}
+
+.duties-card.mobile {
+  background-image: url(../img/phone.jpg);
+}
+
+.duties-card.design {
+  background-image: url(../img/display.jpg);
 }
 
 .duties-card:not(:first-child),
@@ -345,16 +366,13 @@ ul {
   fill: currentColor;
 }
 
-.advantage-icon {
-  fill: #2196f3;
-  width: 50px;
-}
-
 .icon-advantage {
+  display: block;
   height: 70px;
+  width: 70px;
   padding-bottom: 25px;
   padding-top: 25px;
-  background-color: #f5f4fa;
+  /* background-color: #f5f4fa; */
   border-radius: 4px;
 }
 
@@ -373,6 +391,12 @@ ul {
 .advantage-card:not(:first-child),
 .team-card:not(:first-child) {
   margin-left: 30px;
+}
+
+.advantage-card .icon-background {
+  display: flex;
+  background-color: #f5f4fa;
+  justify-content: center;
 }
 
 .hero-container {
@@ -403,12 +427,15 @@ ul {
 
 .team {
   /* border: 2px solid green; */
+  max-width: 1600px;
   display: block;
   text-align: center;
 
   background-color: #f5f4fa;
 
   margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .page-footer {
   display: block;
