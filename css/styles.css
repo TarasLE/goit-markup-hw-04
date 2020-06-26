@@ -66,6 +66,10 @@ ul {
   color: var(--text-accent-color);
 }
 
+/* .link:hover .icon-mail {
+  fill: var(--text-accent-color);
+} */
+
 /* .mail-color {
   color: var(--text-accent-color);
 } */
@@ -135,7 +139,13 @@ ul {
   margin-bottom: auto;
   padding-left: 0;
   margin-left: auto;
+  align-items: center;
 }
+.flex-type .link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .current-page {
   color: var(--text-accent-color);
 }
@@ -323,6 +333,31 @@ ul {
   /* border: solid; */
 }
 
+.icon-mail {
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-vector {
+  width: 10px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.advantage-icon {
+  fill: #2196f3;
+  width: 50px;
+}
+
+.icon-advantage {
+  height: 70px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
 .advantage .container {
   margin-top: 0;
   margin-bottom: 0;
@@ -341,10 +376,19 @@ ul {
 }
 
 .hero-container {
+  max-width: 1600px;
   display: block;
   text-align: center;
   background-color: #757575; /*временный цвет*/
-  /* border: 2px solid green; */
+  border: 2px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/Header.jpg);
 }
 
 .duties,
