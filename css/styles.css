@@ -156,18 +156,24 @@ ul {
 }
 
 .social-block {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  margin-right: 10px;
+
   /* border: solid 2px tomato; */
   /* background-color: salmon; */
 }
 
-.social-block:nth-last-child(1) {
+.team-card .shell,
+.connect .shell {
+  display: block;
+  margin-right: 10px;
+}
+
+.team-card .shell:nth-last-child(1) {
   margin-right: 0px;
 }
 
@@ -625,24 +631,24 @@ ul {
 
 .team {
   /* border: 2px solid green; */
-  max-width: 1600px;
+  /* max-width: 1600px; */
   display: block;
   text-align: center;
 
   background-color: #f5f4fa;
 
   margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 .page-footer {
   display: block;
-  width: 1600px;
+  /* width: 1600px; */
   text-align: center;
   border: 2px solid green;
   margin-top: 94px;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   background-color: #2f303a;
 }
 
