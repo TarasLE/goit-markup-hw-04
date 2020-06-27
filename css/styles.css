@@ -13,6 +13,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* .page-header {
+  background-color: rgb(219, 22, 114);
+} */
+
 ul {
   list-style: none;
 }
@@ -591,6 +595,7 @@ ul {
   text-align: center;
   /* border: 2px solid green; */
   margin-top: 94px;
+  /* background-color: rgb(219, 22, 114); */
 }
 
 .clients .logo-1 {
