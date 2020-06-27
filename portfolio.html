@@ -14,32 +14,39 @@
   <body>
     <header class="container">
       <nav class="navigation flex-type">
-        <a class="logo link" href="./index.html">
-          <span class="logo-colored">Web</span> Studio</a
+        <a class="link" href="./index.html">
+          <span class="logo"
+            ><span class="logo-colored">Web</span> Studio</span
+          ></a
         >
         <!-- логотип -->
 
         <ul class="site-nav flex-type">
           <li>
-            <a class="link" href="./index.html"> Студия</a>
+            <a class="link" href="./index.html">
+              <span class="studio-color">Студия</span></a
+            >
           </li>
-          <li>
-            <a class="link" href="./portfolio.html">
-              <span class="current-page">Портфолио</span>
-            </a>
-          </li>
+          <li><a class="link" href="./portfolio.html"> Портфолио</a></li>
           <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
 
       <ul class="site-auth flex-type">
         <li>
-          <a class="text link" href="mailto:info@devstudio.com"
-            >info@devstudio.com
+          <a class="text link" href="mailto:info@devstudio.com">
+            <svg class="icon-mail">
+              <use href="./img/symbol-defs2.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
           </a>
         </li>
         <li>
-          <a class="text link" href="tel:380961111111">+38 096 111 11 11</a>
+          <a class="text link" href="tel:380961111111"
+            ><svg class="icon-vector">
+              <use href="./img/symbol-defs2.svg#icon-vector"></use></svg
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
@@ -194,20 +201,52 @@
 
         <div class="connect">
           <b class="subtitle">присоединяйтесь</b>
-          <ul>
-            <li>
-              <a href="" aria-label="Ссылка на Instagram"></a>
+          <ul class="flex-type">
+            <li class="social-block">
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Ссылка на Instagram"
+                ><svg class="social-link">
+                  <use href="./img/symbol-defs2.svg#icon-instagram"></use></svg
+              ></a>
             </li>
-            <li>
-              <a href="" aria-label="Ссылка на Twitter"></a>
+            <li class="social-block">
+              <a
+                href="https://twitter.com/explore"
+                aria-label="Ссылка на Twitter"
+                ><svg class="social-link">
+                  <use href="./img/symbol-defs2.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li>
-              <a href="" aria-label="Ссылка на Facebook"></a>
+            <li class="social-block">
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Ссылка на Facebook"
+                ><svg class="social-link">
+                  <use href="./img/symbol-defs2.svg#icon-facebook"></use></svg
+              ></a>
             </li>
-            <li>
-              <a href="" aria-label="Ссылка на LinkedIn"></a>
+            <li class="social-block">
+              <a
+                href="https://www.linkedin.com/feed/"
+                aria-label="Ссылка на LinkedIn"
+                ><svg class="social-link">
+                  <use href="./img/symbol-defs2.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscribe">
+          <b class="subtitle">Подпишитесь на рассылку</b>
+          <div class="buttons-block">
+            <div class="email-button"></div>
+            <a class="footer-button link" href=""
+              >Подписаться
+              <svg class="icon-send">
+                <use href="./img/symbol-defs2.svg#icon-send"></use></svg
+            ></a>
+          </div>
         </div>
       </div>
 

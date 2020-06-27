@@ -14,8 +14,10 @@
   <body>
     <header class="container">
       <nav class="navigation flex-type">
-        <a class="logo link" href="./index.html">
-          <span class="logo-colored">Web</span> Studio</a
+        <a class="link" href="./index.html">
+          <span class="logo"
+            ><span class="logo-colored">Web</span> Studio</span
+          ></a
         >
         <!-- логотип -->
 
@@ -33,6 +35,9 @@
       <ul class="site-auth flex-type">
         <li>
           <a class="text link" href="mailto:info@devstudio.com">
+            <svg class="icon-mail">
+              <use href="./img/symbol-defs2.svg#icon-envelope"></use>
+            </svg>
             info@devstudio.com
           </a>
         </li>
@@ -445,12 +450,14 @@
 
         <div class="subscribe">
           <b class="subtitle">Подпишитесь на рассылку</b>
-          <!-- <div class="email-button"></div> -->
-          <a class="footer-button link" href=""
-            >Подписаться
-            <svg class="icon-send">
-              <use href="./img/symbol-defs2.svg#icon-send"></use></svg
-          ></a>
+          <div class="buttons-block">
+            <div class="email-button"></div>
+            <a class="footer-button link" href=""
+              >Подписаться
+              <svg class="icon-send">
+                <use href="./img/symbol-defs2.svg#icon-send"></use></svg
+            ></a>
+          </div>
         </div>
       </div>
 
